@@ -13,7 +13,7 @@
   <!-- Group -->
   <group>sbnd</group>
 
-  <numevents>3000000</numevents> <!-- Number of events to process.  If processing an input dataset should be larger than the number of events or -1-->
+  <numevents>30000</numevents> <!-- Number of events to process.  If processing an input dataset should be larger than the number of events or -1-->
 
   <!-- Batch resources -->
   <resource>DEDICATED,OPPORTUNISTIC,OFFSITE</resource>
@@ -23,7 +23,7 @@
     <tag>&release;</tag>
     <qual>&releasetag;</qual>
     <!-- v2 puts the eta filter right after the Genie Stage -->
-    <local>/pnfs/sbnd/resilient/users/aantonak/Tarballs/sbnd_cv5.tar</local>
+    <local>/pnfs/sbnd/resilient/users/aantonak/Tarballs/sbnd_eta.tar</local>
   </larsoft>
 
   <!--<check>1</check>--> <!-- validate the job on the grid -->
@@ -41,7 +41,7 @@
     <outdir>/pnfs/sbnd/persistent/users/aantonak/EtaSim</outdir>
     <logdir>/pnfs/sbnd/persistent/users/aantonak/EtaSim</logdir>
     <workdir>/pnfs/sbnd/resilient/users/aantonak/EtaSim</workdir>
-    <numjobs>200</numjobs>
+    <numjobs>5</numjobs>
     <maxfilesperjob>1</maxfilesperjob>
     <!--<datatier>generated</datatier>-->
     <!--<defname>&name;_&release;_&releasetag;_gen</defname>-->
